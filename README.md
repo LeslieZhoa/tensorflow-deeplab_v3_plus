@@ -23,7 +23,7 @@ windows下可以进行测试<br>
 ### 下载数据集
 将[VOC](https://pan.baidu.com/s/1rjjeWl2_KhPG5ha3P0_XBA)数据解压放置在data目录下,里面的SegmentationClassAug文件是DrSleep提供的，是shape为[h,w,1]每一个像素值都对应类别的label,我将它们放到了一起。<br><br>
 将[restnet预训练数据](https://pan.baidu.com/s/1Nwe0s90olZ_BBqA3zT6gkg)解压放置在该模型的根目录下。<br><br>
-如果需要模型预训练数据可以将我训练的[权重数据](https://pan.baidu.com/s/1r4db0OBtWihkIpLcECZAWg)解压放置在model目录下。<br><br>
+如果需要模型预训练数据可以将我训练的[权重数据](https://pan.baidu.com/s/1r4db0OBtWihkIpLcECZAWg)解压到根目录下，会生成一个model文件夹，里面含有模型文件。<br><br>
 ### 代码介绍
 data放置VOC数据和数据处理生成的record文件<br><br>
 model放置训练生成的模型和graph<br><br>
