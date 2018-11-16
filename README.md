@@ -37,7 +37,7 @@ train.py是训练文件<br>
 手动配置config.py的信息或选择默认<br><br>
 若要训练：<br>
 运行python tfrecord.py生成record文件<br>
-运行python train.py训练<br><br>
+运行python train.py训练。  对于计算机gpu选择需修改[这里代码](https://github.com/LeslieZhoa/tensorflow-deeplab_v3_plus/blob/master/train.py#L38)<br><br>
 若要测试：<br>
 运行python test.py<br><br>
 ## 一些疑问
