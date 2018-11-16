@@ -4,6 +4,7 @@
 图像分割是主要功能是将输入图片的每个像素都分好类别，也相当于分类过程。举例来说就是将大小为[h,w,c]的图像输出成[h,w,1]，每个像素值代表一个类别。<br>
 deeplab_v3+可以参考论文[Encoder-Decoder with Atrous Separable Convolution for Semantic Image Segmentation](https://arxiv.org/pdf/1802.02611.pdf)。它的结构图如下：<br>
 ![](https://github.com/LeslieZhoa/tensorflow-deeplab_v3_plus/blob/master/output/model1.png)<br>
+<div align=center><img src="https://github.com/LeslieZhoa/tensorflow-deeplab_v3_plus/blob/master/output/model2.png"/></div>
 ![](https://github.com/LeslieZhoa/tensorflow-deeplab_v3_plus/blob/master/output/model2.png)<br>
 下面对模型进行简要分析<br>
 该模型属于encoder-decoder模型，encoder-decoder常用于自然语言处理中，在图像分割中[U-net](https://arxiv.org/pdf/1505.04597.pdf)也是十分典型的encoder-decoder模型，大体结构如下：<br>
