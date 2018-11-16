@@ -21,7 +21,7 @@ tensorflow=1.4.1<br>
 opencv=3.4.1<br>
 windows下可以进行测试<br>
 ### 下载数据集
-将[VOC](https://v2.fangcloud.com/share/3f67b60f4be339aeecc371abb0)解压后文件夹中的数据放置在data目录下,里面的SegmentationClassAug文件是DrSleep提供的，是shape为[h,w,1]每一个像素值都对应类别的label,我将它们放到了一起。<br><br>
+将[VOC](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar)解压到data目录下,下载DrSleep提供的[SegmentationClassAug文件](https://www.dropbox.com/s/oeu149j8qtbs1x0/SegmentationClassAug.zip?dl=0)解压到./data//VOCdevkit/VOC2012/下，是shape为[h,w,1]每一个像素值都对应类别的label,我将它们放到了一起。<br><br>
 将[restnet预训练数据](https://v2.fangcloud.com/share/cab64a3c3b98ef4fa30ebfb3ec)解压放置在该模型的根目录下。<br><br>
 如果需要模型预训练数据可以将我训练的[权重数据](https://v2.fangcloud.com/share/deee4dc1d3348f2b61cd1add19)解压到根目录下，会生成一个model文件夹，里面含有模型文件。<br><br>
 ### 代码介绍
