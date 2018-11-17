@@ -21,7 +21,8 @@ tensorflow=1.4.1<br>
 opencv=3.4.1<br>
 windows下可以进行测试<br>
 ### 下载数据集
-将[VOC](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar)解压到data目录下,下载DrSleep提供的[SegmentationClassAug文件](https://www.dropbox.com/s/oeu149j8qtbs1x0/SegmentationClassAug.zip?dl=0)解压到./data//VOCdevkit/VOC2012/下，是shape为[h,w,1]每一个像素值都对应类别的label,我将它们放到了一起。<br><br>
+将[VOC](http://host.robots.ox.ac.uk/pascal/VOC/voc2012/VOCtrainval_11-May-2012.tar)解压到data目录下,下载DrSleep提供的[SegmentationClassAug文件](https://www.dropbox.com/s/oeu149j8qtbs1x0/SegmentationClassAug.zip?dl=0)解压，里面有_MACOSX和SegmentationClassAug两个文件夹，将里面的SegmentationClassAug放置到./data//VOCdevkit/VOC2012/下，里面的图片是shape为[h,w,1]每一个像素值都对应类别的label。<br><br>
+将[txt](https://share.weiyun.com/5pjrMSV)文件解压，里面的.txt文件放置到./data下，用于分化训练集和验证集。<br><br>
 将[restnet预训练数据](https://share.weiyun.com/5mWHY7I)解压放置在该模型的根目录下。<br><br>
 如果需要模型预训练数据可以将我训练的[权重数据](https://share.weiyun.com/5lGifzi)解压,将里面的ckpt等文件放置到./model下。<br><br>
 ### 代码介绍
